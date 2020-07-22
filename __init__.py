@@ -1,6 +1,7 @@
 from mycroft import MycroftSkill, intent_file_handler
 import wiringpi
 
+
 #give pin numbers (the set up I run uses the GPIO pin numbering )
 red_front = 16
 green_front = 20
