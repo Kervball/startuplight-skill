@@ -54,7 +54,7 @@ class Startuplight(MycroftSkill):
             wiringpi.delay(10)
 
 #this code fades white when the code word is reconginzed
-    def handler_wakeword(self, message):
+    """def handler_wakeword(self, message):
         for brightness in range(0,100):
             wiringpi.softPwmWrite(blue_back, brightness)
             wiringpi.softPwmWrite(blue_front, brightness)
@@ -68,7 +68,7 @@ class Startuplight(MycroftSkill):
             wiringpi.softPwmWrite(green_back, brightness)
             wiringpi.softPwmWrite(green_front, brightness)
             wiringpi.softPwmWrite(red_back, brightness)
-            wiringpi.softPwmWrite(red_front, brightness)
+            wiringpi.softPwmWrite(red_front, brightness)"""
 
 
 
