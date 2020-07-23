@@ -40,7 +40,7 @@ class Startuplight(MycroftSkill):
         self.add_event('recognizer_loop:wakeword', self.handler_wakeword)
 
 #this function causes the lights to fade teal when ready to go
-    def handler_mycroft_ready(self, message):
+    """def handler_mycroft_ready(self, message):
         for brightness in range(0,100):
             wiringpi.softPwmWrite(red_back, brightness)
             wiringpi.softPwmWrite(red_front, brightness)
@@ -48,10 +48,10 @@ class Startuplight(MycroftSkill):
         for brightness in reversed(range(0,100)):
             wiringpi.softPwmWrite(red_back, brightness)
             wiringpi.softPwmWrite(red_front, brightness)
-            wiringpi.delay(5)
+            wiringpi.delay(5)"""
 
 #this code fades white when the code word is reconginzed
-    """def handler_wakeword(self, message):
+    def handler_wakeword(self, message):
         for brightness in range(0,100):
             wiringpi.softPwmWrite(blue_back, brightness)
             wiringpi.softPwmWrite(blue_front, brightness)
